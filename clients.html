@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klien Kami - PT Anugrah Firdaus Mandiri</title>
+    <meta name="description"
+        content="Klien dan mitra kerja yang telah mempercayai layanan logistik PT Anugrah Firdaus Mandiri (AFM).">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/LOGO-AFM.png" type="image/png">
+    <style>
+        .client-logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background: white;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-soft);
+            height: 150px;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .client-logo-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .client-logo {
+            max-width: 100%;
+            max-height: 100px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .client-logo-container:hover .client-logo {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/LOGO-AFM.png" alt="Logo PT Anugrah Firdaus Mandiri">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="height: 50vh; background: linear-gradient(rgba(10, 46, 92, 0.9), rgba(10, 46, 92, 0.8)), url('assets/images/image-12.webp'); background-size: cover; background-position: center;">
+        <div class="container hero-content">
+            <h1>Klien Kami</h1>
+            <p>Kebanggaan kami bisa melayani dan menjadi mitra terpercaya bagi perusahaan-perusahaan terkemuka.</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mitra & Klien</h2>
+                <p>Daftar perusahaan yang telah menggunakan layanan PT Anugrah Firdaus Mandiri</p>
+            </div>
+
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 30px;">
+                <!-- Klien 1 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-1.png" alt="Klien 1" class="client-logo">
+                </div>
+                <!-- Klien 2 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-2.jpg" alt="Klien 2" class="client-logo">
+                </div>
+                <!-- Klien 3 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-3.jpg" alt="Klien 3" class="client-logo">
+                </div>
+                <!-- Klien 4 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-4.jpg" alt="Klien 4" class="client-logo">
+                </div>
+                <!-- Klien 5 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-5.png" alt="Klien 5" class="client-logo">
+                </div>
+                <!-- Klien 6 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-6.jpg" alt="Klien 6" class="client-logo">
+                </div>
+                <!-- Klien 7 -->
+                <div class="client-logo-container">
+                    <img src="assets/images/LOGO-KLIEN-7.jpg" alt="Klien 7" class="client-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Logo & Name -->
+                <div class="footer-col logo-col">
+                    <img src="assets/images/LOGO-AFM.png" alt="AFM Logo" style="height: 80px; margin-bottom: 20px;">
+                    <h3>PT ANUGRAH FIRDAUS MANDIRI</h3>
+                </div>
+
+                <!-- Col 2: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="clients.html">Klien Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="contact-row">
+                        <i class="fas fa-phone"></i>
+                        <span>021-4300823</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+62 812-1051-565</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <span>afmjakarta@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- Col 4: Address -->
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p>Jl. Warakas Gang 22 No.17, RT.004/RW.007, Papanggo, Tj. Priok, Jakarta Utara, DKI Jakarta 14310
+                    </p>
+                </div>
+
+                <!-- Col 5: Map -->
+                <div class="footer-col footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9837563068666!2d106.87977797498966!3d-6.132924993853879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f56475654929%3A0xc39110756715456!2sJl.%20Warakas%20G%20Gg.%2022%20No.17%2C%20RT.4%2FRW.7%2C%20Papanggo%2C%20Kec.%20Zj.%20Priok%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014340!5e0!3m2!1sen!2sid!4v1705646000000!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 PT Anugrah Firdaus Mandiri. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

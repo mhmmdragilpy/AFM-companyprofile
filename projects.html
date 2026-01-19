@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyek & Galeri - PT Anugrah Firdaus Mandiri</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/LOGO-AFM.png" type="image/png">
+    <style>
+        .gallery-grid {
+            column-count: 3;
+            column-gap: 20px;
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+            break-inside: avoid;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: var(--border-radius-md);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 5px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .lightbox-close:hover,
+        .lightbox-close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/LOGO-AFM.png" alt="Logo PT Anugrah Firdaus Mandiri">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html">Tentang Kami</a></li>
+                    <li><a href="services.html">Layanan</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="hero"
+        style="height: 40vh; background: linear-gradient(rgba(10, 46, 92, 0.9), rgba(10, 46, 92, 0.8)), url('assets/images/image-8.webp'); background-size: cover; background-position: center;">
+        <div class="container hero-content">
+            <h1>Galeri Proyek</h1>
+            <p>Dokumentasi aktivitas operasional dan armada kami.</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="features">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Generating Gallery Items -->
+                <div class="gallery-item"><img src="assets/images/image-1.webp" alt="Proyek 1"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-2.webp" alt="Proyek 2"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-3.webp" alt="Proyek 3"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-4.webp" alt="Proyek 4"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-5.webp" alt="Proyek 5"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-6.webp" alt="Proyek 6"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-7.webp" alt="Proyek 7"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-8.webp" alt="Proyek 8"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-9.webp" alt="Proyek 9"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-10.webp" alt="Proyek 10"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-11.webp" alt="Proyek 11"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-12.webp" alt="Proyek 12"
+                        onclick="openLightbox(this)"></div>
+                <div class="gallery-item"><img src="assets/images/image-13.webp" alt="Proyek 13"
+                        onclick="openLightbox(this)"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Logo & Name -->
+                <div class="footer-col logo-col">
+                    <img src="assets/images/LOGO-AFM.png" alt="AFM Logo" style="height: 80px; margin-bottom: 20px;">
+                    <h3>PT ANUGRAH FIRDAUS MANDIRI</h3>
+                </div>
+
+                <!-- Col 2: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="clients.html">Klien Kami</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="contact-row">
+                        <i class="fas fa-phone"></i>
+                        <span>021-4300823</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+62 812-1051-565</span>
+                    </div>
+                    <div class="contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <span>afmjakarta@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- Col 4: Address -->
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p>Jl. Warakas Gang 22 No.17, RT.004/RW.007, Papanggo, Tj. Priok, Jakarta Utara, DKI Jakarta 14310
+                    </p>
+                </div>
+
+                <!-- Col 5: Map -->
+                <div class="footer-col footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9837563068666!2d106.87977797498966!3d-6.132924993853879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f56475654929%3A0xc39110756715456!2sJl.%20Warakas%20G%20Gg.%2022%20No.17%2C%20RT.4%2FRW.7%2C%20Papanggo%2C%20Kec.%20Zj.%20Priok%2C%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2014340!5e0!3m2!1sen!2sid!4v1705646000000!5m2!1sen!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 PT Anugrah Firdaus Mandiri. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Inline script for lightbox specific to gallery page
+        const modal = document.getElementById("lightboxModal");
+        const modalImg = document.getElementById("lightboxImg");
+
+        function openLightbox(img) {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        function closeLightbox() {
+            modal.style.display = "none";
+        }
+
+        // Close when clicking outside image
+        modal.onclick = function (event) {
+            if (event.target == modal) {
+                closeLightbox();
+            }
+        }
+    </script>
+</body>
+
+</html>
