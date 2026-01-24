@@ -1,85 +1,149 @@
-# PT Anugrah Firdaus Mandiri - Company Profile Website
+# PT Anugrah Firdaus Mandiri (AFM) - Company Profile Website
 
-Website profil perusahaan untuk PT Anugrah Firdaus Mandiri (AFM), penyedia jasa Stevedoring, Trucking, dan Storage terpercaya di Jakarta Utara.
+![License](https://img.shields.io/badge/license-private-red.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![Tech Stack](https://img.shields.io/badge/stack-HTML%20%7C%20CSS%20%7C%20JS-blue.svg)
 
-## 🚀 Features
+> **"Mitra Strategis Logistik Pelabuhan"**
 
-- **Modern Design**: Menggunakan desain modern dengan color palette yang profesional
-- **Responsive Layout**: Optimal di semua perangkat (desktop, tablet, mobile)
-- **Fast Performance**: HTML/CSS/JavaScript murni untuk performa maksimal
-- **SEO Optimized**: Struktur semantic HTML dan meta tags yang optimal
-- **Professional Aesthetics**: Gradients, animations, dan shadows untuk tampilan premium
+Website profil perusahaan profesional untuk **PT Anugrah Firdaus Mandiri (AFM)**, sebuah perusahaan yang bergerak di bidang jasa *Stevedoring*, *Trucking*, dan *Storage* di Jakarta Utara. Website ini dirancang untuk menampilkan kredibilitas perusahaan, layanan, dan portofolio proyek dengan antarmuka yang modern dan responsif.
 
-## 📁 Project Structure
+🔗 **Live Demo:** [https://afm-companyprofile.vercel.app/](https://afm-companyprofile.vercel.app/)
 
-```
-CompanyProfile/
-├── index.html          # Halaman utama/landing page
-├── about.html          # Halaman tentang kami
-├── services.html       # Halaman layanan
-├── projects.html       # Halaman galeri proyek
-├── clients.html        # Halaman klien
-├── contact.html        # Halaman kontak
-├── assets/
-│   ├── css/
-│   │   ├── style.css       # Main stylesheet
-│   │   └── animations.css  # Animation styles
-│   ├── js/
-│   │   └── main.js         # Main JavaScript
-│   └── images/             # Image assets
-├── vercel.json         # Vercel deployment config
-└── README.md          # This file
-```
+---
 
-## 🎨 Design System
+## 🛠 Tech Stack
 
-### Color Palette
-- **Primary**: Deep Navy (#051a36)
-- **Secondary**: Industrial Gold (#f7b731)
-- **Accent**: Royal Blue (#2d98da)
+Project ini dibangun menggunakan pendekatan *Native/Vanilla* untuk memastikan performa yang maksimal, load time yang cepat, dan kompatibilitas yang luas tanpa ketergantungan pada framework yang berat.
 
-### Typography
-- **Headings**: Outfit (Google Fonts)
-- **Body**: Inter (Google Fonts)
+| Category | Technology | Description |
+|----------|------------|-------------|
+| **Frontend** | HTML5 | Semantic markup untuk struktur konten yang SEO-friendly |
+| **Styling** | CSS3 | Custom Properties (Variables), Flexbox, CSS Grid, Responsive Design |
+| **Scripting** | Vanilla JavaScript (ES6+) | DOM Manipulation, Intersection Observer API, Event Handling |
+| **Icons** | Font Awesome 6 | Ikon vektor skalabel untuk UI yang tajam |
+| **Fonts** | Google Fonts | **Outfit** (Headings) & **Inter** (Body) |
+| **Deployment** | Vercel | Platform hosting untuk static types |
 
-## 🛠️ Technology Stack
+---
 
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with custom properties
-- **JavaScript**: Vanilla JS for interactions
-- **Font Awesome**: Icon library
-- **Google Fonts**: Typography
+## ✨ Fitur Utama
 
-## 📦 Deployment
+Berikut adalah fitur-fitur unggulan yang telah diimplementasikan dalam kode saat ini:
 
-### Deploy to Vercel
+*   **Responsive & Adaptive Layout**: Tampilan yang optimal di berbagai perangkat (Desktop, Tablet, Mobile) dengan navigasi yang responsif.
+*   **Modern UI/UX Design**: Menggunakan palet warna korporat (Deep Navy & Industrial Gold), *glassmorphism*, dan *drop-shadows* yang halus.
+*   **Smooth Scroll Animations**: Elemen website muncul secara elegan saat di-scroll menggunakan `IntersectionObserver` API.
+*   **Interactive Stats Counter**: Animasi penghitung angka otomatis untuk menampilkan statistik pengalaman dan jumlah klien.
+*   **Sticky Navbar**: Header navigasi yang tetap terlihat saat scrolling dengan efek transisi *compact*.
+*   **Image Gallery Lightbox**: Fitur modal *popup* untuk menampilkan detail foto proyek tanpa meninggalkan halaman.
+*   **Direct WhatsApp Integration**: Tombol *floating* WhatsApp yang mengarahkan user langsung ke chat CS dengan pesan *pre-filled*.
+*   **Performance Optimized**: Kode yang ringan tanpa *bloatware* library pihak ketiga yang tidak perlu.
 
-1. Push code ke GitHub repository
-2. Import project di [Vercel](https://vercel.com)
-3. Deploy secara otomatis
+---
 
-atau menggunakan Vercel CLI:
+## 📷 Screenshots
+
+| Landing Page | Services Section |
+|:---:|:---:|
+| ![Home Page Preview](https://via.placeholder.com/400x250?text=Home+Page+Preview) | ![Services Preview](https://via.placeholder.com/400x250?text=Services+Preview) |
+
+| Projects Gallery | Mobile View |
+|:---:|:---:|
+| ![Gallery Preview](https://via.placeholder.com/400x250?text=Gallery+Preview) | ![Mobile Preview](https://via.placeholder.com/400x250?text=Mobile+Preview) |
+
+*(Note: Screenshot di atas adalah placeholder. Silakan update dengan screenshot aktual dari aplikasi).*
+
+---
+
+## 📋 Prerequisites
+
+Sebelum memulai, pastikan Anda memiliki tools berikut:
+
+*   **Web Browser**: Google Chrome, Mozilla Firefox, Microsoft Edge, atau Safari (Versi terbaru).
+*   **Code Editor**: Visual Studio Code (Rekomendasi).
+*   **Node.js & npm** (Opsional): Hanya dibutuhkan jika ingin menjalankan local server menggunakan CLI.
+
+---
+
+## 🚀 Installation & Getting Started
+
+Karena project ini adalah **Static Website**, Anda tidak perlu melakukan `npm install` untuk mengunduh dependensi berat. Cukup *serve* file HTML-nya.
+
+### Metode 1: Menggunakan VS Code Live Server (Rekomendasi)
+
+1.  **Clone Repository**
+    ```bash
+    git clone https://github.com/mhmmdragilpy/AFM-companyprofile.git
+    cd AFM-companyprofile
+    ```
+
+2.  **Buka di VS Code**
+    Pastikan Anda sudah menginstall ekstensi **Live Server** di VS Code.
+
+3.  **Jalankan Project**
+    - Buka file `index.html`.
+    - Klik kanan di area editor.
+    - Pilih **"Open with Live Server"**.
+    - Website akan otomatis terbuka di browser default Anda (biasanya di `http://127.0.0.1:5500`).
+
+### Metode 2: Menggunakan Node.js (npx)
+
+Jika Anda lebih suka menggunakan terminal:
+
+1.  **Clone Repository**
+    ```bash
+    git clone https://github.com/mhmmdragilpy/AFM-companyprofile.git
+    cd AFM-companyprofile
+    ```
+
+2.  **Jalankan Local Server**
+    Gunakan `npx` (bawaan npm) untuk menjalankan web server ringan.
+    ```bash
+    npx serve .
+    ```
+
+3.  **Akses Website**
+    Buka `http://localhost:3000` di browser Anda.
+
+---
+
+## 📁 Struktur Project
 
 ```bash
-npm i -g vercel
-vercel
+AFM-companyprofile/
+├── assets/
+│   ├── css/
+│   │   └── style.css       # File styling utama (Modern CSS)
+│   ├── images/             # Aset gambar project, logo, dan ikon
+│   └── js/
+│       └── main.js         # Logic JavaScript (Navbar, Animations, Counters)
+├── about.html              # Halaman Profil Perusahaan
+├── clients.html            # Halaman Daftar Klien
+├── contact.html            # Halaman Kontak & Peta
+├── index.html              # Halaman Utama (Landing Page)
+├── projects.html           # Halaman Galeri Foto
+├── services.html           # Halaman Detail Layanan
+├── vercel.json             # Konfigurasi Deployment Vercel
+└── README.md               # Dokumentasi Project
 ```
 
-### Manual Deployment
+---
 
-Website ini adalah static site, sehingga bisa di-deploy ke hosting apapun:
-- Upload semua file ke web hosting
-- Pastikan `index.html` berada di root directory
-- Akses melalui domain yang telah dikonfigurasi
+## 📞 Kontak
 
-## 📞 Contact Information
+Jika ada pertanyaan seputar pengembangan website ini, silakan hubungi tim IT atau kontak di bawah:
 
 **PT Anugrah Firdaus Mandiri**
-- **Alamat**: Jl. Warakas Gang 22 No.17, RT.004/RW.007, Papanggo, Tj. Priok, Jakarta Utara, DKI Jakarta 14310
-- **Telepon**: 021-4300823
-- **WhatsApp**: +62 812-1051-565
-- **Email**: afmjakarta@gmail.com
+*   📍 **Alamat**: Jl. Warakas Gang 22 No.17, Tanjung Priok, Jakarta Utara
+*   📧 **Email**: afmjakarta@gmail.com
+*   📱 **WhatsApp**: +62 812-1051-565
 
-## 📄 License
+---
 
+## 👤 Author
+
+Developed with ❤️ by Mang Do-san
+
+---
 © 2026 PT Anugrah Firdaus Mandiri. All Rights Reserved.
