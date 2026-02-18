@@ -442,7 +442,7 @@ img {
     width: 150px;
     height: 100px;
     object-fit: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); REMOVED for color logos */
     opacity: 0.7;
     transition: all 0.3s ease;
 }
