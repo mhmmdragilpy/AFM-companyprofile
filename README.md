@@ -1,4 +1,4 @@
-# PT Anugrah Firdaus Mandiri (AFM) - Company Profile Website
+# Anugrah Firdaus Mandiri (AFM) - Company Profile Website
 
 ![License](https://img.shields.io/badge/license-private-red.svg)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
@@ -6,7 +6,7 @@
 
 > **"Mitra Strategis Logistik Pelabuhan"**
 
-Website profil perusahaan profesional untuk **PT Anugrah Firdaus Mandiri (AFM)**, sebuah perusahaan yang bergerak di bidang jasa *Stevedoring*, *Trucking*, dan *Storage* di Jakarta Utara. Website ini dirancang untuk menampilkan kredibilitas perusahaan, layanan, dan portofolio proyek dengan antarmuka yang modern dan responsif.
+Website profil perusahaan profesional untuk **Anugrah Firdaus Mandiri (AFM)**, sebuah perusahaan yang bergerak di bidang jasa *Stevedoring*, *Trucking*, dan *Storage* di Jakarta Utara. Website ini dirancang untuk menampilkan kredibilitas perusahaan, layanan, dan portofolio proyek dengan antarmuka yang modern dan responsif.
 
 🔗 **Live Demo:** [https://afm-companyprofile.vercel.app/](https://afm-companyprofile.vercel.app/)
 
@@ -134,7 +134,7 @@ AFM-companyprofile/
 
 Jika ada pertanyaan seputar pengembangan website ini, silakan hubungi tim IT atau kontak di bawah:
 
-**PT Anugrah Firdaus Mandiri**
+**Anugrah Firdaus Mandiri**
 *   📍 **Alamat**: Jl. Warakas Gang 22 No.17, Tanjung Priok, Jakarta Utara
 *   📧 **Email**: afmjakarta@gmail.com
 *   📱 **WhatsApp**: +62 812-1051-565
@@ -146,4 +146,4 @@ Jika ada pertanyaan seputar pengembangan website ini, silakan hubungi tim IT ata
 Developed with ❤️ by Mang Do-san
 
 ---
-© 2026 PT Anugrah Firdaus Mandiri. All Rights Reserved.
+© 2026 Anugrah Firdaus Mandiri. All Rights Reserved.
