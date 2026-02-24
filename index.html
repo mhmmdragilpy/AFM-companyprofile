@@ -120,6 +120,12 @@
             }
         }
 
+        @media (max-width: 480px) {
+            .gallery-grid {
+                column-count: 1;
+            }
+        }
+
         /* Client Logo Styles */
         .client-logo-container {
             display: flex;
@@ -182,13 +188,13 @@
         <div class="container hero-content fade-in-up">
             <!-- Updated Hero: Brand Name & Subtitle -->
             <h1>ANUGRAH FIRDAUS MANDIRI</h1>
-            <span class="hero-subtitle">STEVEDORING SERVICES IN INDONESIA</span>
+            <span class="hero-subtitle">INTEGRATED PORT LOGISTICS SERVICES</span>
         </div>
     </section>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/6281284847306?text=Halo%20AFM,%20saya%20tertarik%20dengan%20layanan%20Anda." target="_blank"
-        class="whatsapp-float">
+    <a href="https://wa.me/6281297381874?text=Dear%20AFM%20Team%2C%0A%0ASaya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20layanan%20port%20logistics%20(Stevedoring%2C%20Trucking%2C%20Storage%2C%20Assembly)%20yang%20Anda%20tawarkan.%0A%0AMohon%20informasinya.%0ATerima%20kasih."
+        target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -196,27 +202,33 @@
     <section class="features">
         <div class="container">
             <div class="section-header fade-in-up">
-                <h2>Komitmen Layanan Kami</h2>
-                <p>Mendukung kelancaran bisnis Anda dengan integritas dan efisiensi tinggi</p>
+                <h2>Our Service Commitment</h2>
+                <p>Mendukung kelancaran bisnis Anda dengan integritas, efisiensi, dan standar global</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card fade-in-up">
+                <div class="feature-card tilt-hover fade-in-up stagger-1">
                     <div class="feature-icon"><i class="fas fa-ship"></i></div>
-                    <h3>Efisiensi Operasional</h3>
-                    <p>Meminimalkan waktu sandar kapal (port stay) melalui perencanaan bongkar muat yang presisi dan
-                        cepat.</p>
+                    <h3>Operational Excellence</h3>
+                    <p>Meminimalkan port stay melalui integrated cargo handling planning dan koordinasi operasional yang
+                        presisi.</p>
                 </div>
-                <div class="feature-card fade-in-up">
+                <div class="feature-card tilt-hover fade-in-up stagger-2">
                     <div class="feature-icon"><i class="fas fa-hard-hat"></i></div>
-                    <h3>Safety First</h3>
-                    <p>Memprioritaskan Keselamatan dan Kesehatan Kerja (K3) dalam setiap aktivitas untuk melindungi aset
-                        Anda.</p>
+                    <h3>Safety First — Zero Accident</h3>
+                    <p>Menerapkan standar Keselamatan dan Kesehatan Kerja (K3) tertinggi sesuai regulasi DJPL dalam
+                        setiap aktivitas port logistics.</p>
                 </div>
-                <div class="feature-card fade-in-up">
+                <div class="feature-card tilt-hover fade-in-up stagger-3">
                     <div class="feature-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Integritas & Kepercayaan</h3>
-                    <p>Menjaga amanah klien dengan transparansi dan akuntabilitas penuh dalam setiap proses logistik.
-                    </p>
+                    <h3>Trusted Partnership</h3>
+                    <p>Building long-term partnership melalui transparansi, akuntabilitas, dan konsistensi layanan
+                        supply chain yang terintegrasi.</p>
+                </div>
+                <div class="feature-card tilt-hover fade-in-up stagger-4">
+                    <div class="feature-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3>End-to-End Solutions</h3>
+                    <p>Solusi logistik menyeluruh — dari vessel berthing, cargo handling, assembly, hingga inland
+                        distribution ke seluruh Indonesia.</p>
                 </div>
             </div>
         </div>
@@ -231,21 +243,19 @@
             </div>
 
             <!-- Profile & Vision -->
-            <div class="fade-in-up"
-                style="display: flex; gap: 40px; flex-wrap: wrap; align-items: center; margin-bottom: 50px;">
-                <div style="flex: 1; min-width: 300px;">
-                    <img src="assets/images/image-1.jpeg" alt="AFM Team"
-                        style="border-radius: var(--border-radius-md); box-shadow: var(--shadow-soft); width: 100%;">
+            <div class="about-grid fade-in-up">
+                <div class="about-image">
+                    <img src="assets/images/image-1.jpeg" alt="AFM Team">
                 </div>
-                <div style="flex: 1; min-width: 300px;">
-                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">Dedikasi Untuk Keunggulan</h3>
-                    <p style="margin-bottom: 15px;">Anugrah Firdaus Mandiri (AFM) hadir sebagai solusi komprehensif
+                <div class="about-text">
+                    <h3>Dedikasi Untuk Keunggulan</h3>
+                    <p>Anugrah Firdaus Mandiri (AFM) hadir sebagai solusi komprehensif
                         untuk kebutuhan Stevedoring, Cargodoring, dan Delivery di pelabuhan. Kami memahami betapa
                         pentingnya ketepatan waktu dalam rantai pasok industri.</p>
                     <p>Didukung oleh tim manajemen yang solid dan tenaga kerja bongkar muat (TKBM) yang terampil, kami
                         menjamin kelancaran arus barang dari dermaga hingga ke gudang pemilik barang.</p>
 
-                    <div style="display: flex; gap: 20px; margin-top: 30px;">
+                    <div class="btn-group">
                         <a href="about.html" class="btn btn-primary">Selengkapnya Tentang Kami</a>
                     </div>
                 </div>
@@ -256,21 +266,21 @@
     <!-- Stats -->
     <section class="stats">
         <div class="container stats-grid">
-            <div class="stat-item">
-                <div class="stat-number">10+</div>
-                <div class="stat-label">Tahun Pengalaman</div>
+            <div class="stat-item fade-in-up stagger-1">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years of Experience</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Klien Terpercaya</div>
+            <div class="stat-item fade-in-up stagger-2">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Annual Ships Handled</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">1000+</div>
-                <div class="stat-label">Proyek Selesai</div>
+            <div class="stat-item fade-in-up stagger-3">
+                <div class="stat-number">2M+</div>
+                <div class="stat-label">Annual Cargo Handled (Tons)</div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Dukungan Operasional</div>
+            <div class="stat-item fade-in-up stagger-4">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Heavy Equipment Handled (Units/Year)</div>
             </div>
         </div>
     </section>
@@ -278,60 +288,80 @@
     <!-- SERVICES SECTION (Merged) -->
     <section id="services" class="services-preview" style="background-color: var(--bg-off-white);">
         <div class="container">
-            <div class="section-header">
-                <h2>Layanan Kami</h2>
-                <p>Solusi komprehensif untuk kebutuhan logistik Anda</p>
+            <div class="section-header fade-in-up">
+                <h2>Our Services</h2>
+                <p>Comprehensive port logistics solutions — from vessel to final destination</p>
             </div>
 
             <div class="features-grid">
                 <!-- Stevedoring -->
-                <div class="service-card">
-                    <img src="assets/images/image-1.jpeg" alt="Stevedoring"
-                        style="width:100%; height:200px; object-fit:cover;">
+                <div class="service-card tilt-hover fade-in-up stagger-1">
+                    <img src="assets/images/image-7.jpeg" alt="Stevedoring - Port Cargo Handling Indonesia"
+                        class="service-card-img">
                     <div class="service-content">
                         <h3><i class="fas fa-ship"
                                 style="color:var(--secondary-color); margin-right:10px;"></i>Stevedoring</h3>
-                        <p>Layanan bongkar muat kapal (curah, breakbulk, kontainer) dengan peralatan modern dan tenaga
-                            ahli.</p>
+                        <p>Layanan bongkar muat kapal profesional — curah kering/cair, breakbulk, dan general cargo —
+                            dengan peralatan modern dan certified crew.</p>
                         <ul style="margin-top: 15px; list-style: none; font-size: 0.9rem; color: #666;">
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> Direct
-                                Berthing</li>
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> High Safety
-                                Standard</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Direct
+                                Berthing & Fast Port Turnaround</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>HSE
+                                Compliance & Zero Accident Policy</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Trucking -->
-                <div class="service-card">
-                    <img src="assets/images/image-11.jpeg" alt="Trucking"
-                        style="width:100%; height:200px; object-fit:cover;">
+                <div class="service-card tilt-hover fade-in-up stagger-2">
+                    <img src="assets/images/image-1.jpeg" alt="Trucking - Inland Distribution Logistics"
+                        class="service-card-img">
                     <div class="service-content">
                         <h3><i class="fas fa-truck-moving"
                                 style="color:var(--secondary-color); margin-right:10px;"></i>Trucking</h3>
-                        <p>Armada transportasi darat handal untuk pengiriman tepat waktu ke seluruh tujuan domestik.</p>
+                        <p>Armada transportasi darat yang handal untuk last mile delivery — dari pelabuhan langsung ke
+                            warehouse atau pabrik tujuan.</p>
                         <ul style="margin-top: 15px; list-style: none; font-size: 0.9rem; color: #666;">
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> Armada
-                                Prima</li>
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> Live
-                                Tracking</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Armada Dump
+                                Truck & Trailer Prima</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Real-Time
+                                GPS Tracking</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Storage -->
-                <div class="service-card">
-                    <img src="assets/images/image-5.jpeg" alt="Storage"
-                        style="width:100%; height:200px; object-fit:cover;">
+                <div class="service-card tilt-hover fade-in-up stagger-3">
+                    <img src="assets/images/image-8.jpeg" alt="Storage - Warehouse & Open Yard Logistics"
+                        class="service-card-img">
                     <div class="service-content">
                         <h3><i class="fas fa-warehouse"
                                 style="color:var(--secondary-color); margin-right:10px;"></i>Storage</h3>
-                        <p>Fasilitas pergudangan dan lapangan penumpukan yang aman, tertata rapi, dan strategis.</p>
+                        <p>Fasilitas pergudangan dan open yard strategis di area pelabuhan — aman, tertata, dan ideal
+                            untuk cargo transit maupun long-term storage.</p>
                         <ul style="margin-top: 15px; list-style: none; font-size: 0.9rem; color: #666;">
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> Keamanan 24
-                                Jam</li>
-                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i> Manajemen
-                                Sistematis</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>24/7
+                                Security Surveillance</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Systematic
+                                Inventory Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Assembly -->
+                <div class="service-card tilt-hover fade-in-up stagger-4">
+                    <img src="assets/images/image-4.jpeg" alt="Assembly - Heavy Equipment Kitting & Pre-Assembly"
+                        class="service-card-img">
+                    <div class="service-content">
+                        <h3><i class="fas fa-gears"
+                                style="color:var(--secondary-color); margin-right:10px;"></i>Assembly</h3>
+                        <p>Layanan perakitan komponen (pre-assembly) dan kitting di area pelabuhan untuk heavy
+                            equipment, industrial machinery, dan project cargo.</p>
+                        <ul style="margin-top: 15px; list-style: none; font-size: 0.9rem; color: #666;">
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Certified
+                                Technician Team</li>
+                            <li><i class="fas fa-check-circle" style="color: green; margin-right: 5px;"></i>Quality
+                                Assurance & Commissioning</li>
                         </ul>
                     </div>
                 </div>
@@ -385,7 +415,7 @@
                 <p>Mitra yang telah mempercayai layanan kami</p>
             </div>
 
-            <div class="features-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 30px;">
+            <div class="features-grid client-grid">
                 <!-- Klien 1 -->
                 <div class="client-logo-container">
                     <img src="assets/images/LOGO-KLIEN-1.png" alt="Klien 1" class="client-logo">
@@ -447,7 +477,7 @@
                     </div>
                     <div class="contact-row">
                         <i class="fab fa-whatsapp"></i>
-                        <span>+62 812-1051-565</span>
+                        <span>+62 812-9738-1874</span>
                     </div>
                     <div class="contact-row">
                         <i class="fas fa-envelope"></i>
